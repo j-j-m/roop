@@ -18,6 +18,10 @@ fi
 echo "Updating pip..."
 python3 -m pip install --upgrade pip
 
+# Downgrade NumPy to a version below 2.0 for compatibility
+echo "Installing numpy version < 2.0..."
+pip install "numpy<2"
+
 # Uninstall existing onnxruntime packages if present
 echo "Uninstalling onnxruntime and onnxruntime-gpu (if installed)..."
 pip uninstall -y onnxruntime onnxruntime-gpu || true
@@ -29,6 +33,10 @@ pip install onnxruntime-gpu==1.15.1
 # Install TensorFlow
 echo "Installing TensorFlow..."
 pip install tensorflow
+
+# Install customtkinter (required for the GUI module)
+echo "Installing customtkinter..."
+pip install customtkinter
 
 # Create folder structure for files outside the current folder
 BASE_FOLDER="/workspace/files"
