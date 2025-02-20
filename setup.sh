@@ -26,6 +26,10 @@ pip uninstall -y onnxruntime onnxruntime-gpu || true
 echo "Installing onnxruntime-gpu==1.15.1..."
 pip install onnxruntime-gpu==1.15.1
 
+# Install TensorFlow
+echo "Installing TensorFlow..."
+pip install tensorflow
+
 # Create folder structure for files outside the current folder
 BASE_FOLDER="/workspace/files"
 echo "Creating folder structure at $BASE_FOLDER..."
