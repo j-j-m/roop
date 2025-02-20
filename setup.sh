@@ -46,6 +46,10 @@ pip install tkinterdnd2
 echo "Installing python3-tk..."
 apt-get update && apt-get install -y python3-tk
 
+# Install ffmpeg (required by roop)
+echo "Installing ffmpeg..."
+apt-get update && apt-get install -y ffmpeg
+
 # Install OpenCV (using the headless package for headless environments)
 echo "Installing OpenCV (headless)..."
 pip install opencv-python-headless
