@@ -46,6 +46,10 @@ pip install tkinterdnd2
 echo "Installing python3-tk..."
 apt-get update && apt-get install -y python3-tk
 
+# Install OpenCV (using the headless package for headless environments)
+echo "Installing OpenCV (headless)..."
+pip install opencv-python-headless
+
 # Create folder structure for files outside the current folder
 BASE_FOLDER="/workspace/files"
 echo "Creating folder structure at $BASE_FOLDER..."
