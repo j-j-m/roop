@@ -50,6 +50,10 @@ apt-get update && apt-get install -y python3-tk
 echo "Installing OpenCV (headless)..."
 pip install opencv-python-headless
 
+# Install insightface (for face analysis functionality)
+echo "Installing insightface..."
+pip install insightface
+
 # Create folder structure for files outside the current folder
 BASE_FOLDER="/workspace/files"
 echo "Creating folder structure at $BASE_FOLDER..."
