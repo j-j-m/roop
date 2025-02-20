@@ -54,6 +54,10 @@ pip install opencv-python-headless
 echo "Installing insightface..."
 pip install insightface
 
+# Install opennsfw2 (for NSFW detection functionality)
+echo "Installing opennsfw2..."
+pip install opennsfw2
+
 # Create folder structure for files outside the current folder
 BASE_FOLDER="/workspace/files"
 echo "Creating folder structure at $BASE_FOLDER..."
