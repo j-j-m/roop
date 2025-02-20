@@ -38,6 +38,10 @@ pip install tensorflow
 echo "Installing customtkinter..."
 pip install customtkinter
 
+# Install tkinter via the system package (python3-tk)
+echo "Installing python3-tk..."
+apt-get update && apt-get install -y python3-tk
+
 # Create folder structure for files outside the current folder
 BASE_FOLDER="/workspace/files"
 echo "Creating folder structure at $BASE_FOLDER..."
@@ -45,4 +49,4 @@ mkdir -p "$BASE_FOLDER/face_image" "$BASE_FOLDER/video_input" "$BASE_FOLDER/vide
 
 echo "===== Setup complete ====="
 echo "Now, run your roop command separately. For example:"
-echo "python3 run.py --execution-provider cuda -s $BASE_FOLDER/face_image/rdj.png -t \"$BASE_FOLDER/video_input/Gjovani - Kalaja e Ulqinit.mp4\" -o $BASE_FOLDER/video_output/output.mp4"
+echo "python3 run.py --execution-provider cuda -s \$BASE_FOLDER/face_image/rdj.png -t \"\$BASE_FOLDER/video_input/Gjovani - Kalaja e Ulqinit.mp4\" -o \$BASE_FOLDER/video_output/output.mp4"
