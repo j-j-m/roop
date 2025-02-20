@@ -38,6 +38,10 @@ pip install tensorflow
 echo "Installing customtkinter..."
 pip install customtkinter
 
+# Install tkinterdnd2 (for drag-and-drop support in the GUI)
+echo "Installing tkinterdnd2..."
+pip install tkinterdnd2
+
 # Install tkinter via the system package (python3-tk)
 echo "Installing python3-tk..."
 apt-get update && apt-get install -y python3-tk
